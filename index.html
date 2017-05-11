@@ -10,7 +10,16 @@
 <body>
 <main class="main-wrapper">
 	<!--MAIN HEADER -->
-	<section>
+	<section id = "newTaskForm">
+		<h3 class ="todo-form-title">New To Do </h3>
+		<div class= "form-imput-container">
+			<img id= "cancel" src = "./img/icons/cross.png" alt="close from icon">
+			<input id="newItemInput" class="todo-title-imput form-imput" type="text" placeholder="To-Do Title">
+			<button ud="saveNewItem" class="complete-todo-button">Add To Do</button>
+		</div>
+	</section> 
+		
+		<section>
 		<header class="main-page-header">
 			<div class="logo-container">
 				<img class="logo" src="./img/icons/check-box.png" alt="Check box image">
@@ -23,6 +32,17 @@
 
 	<!-- to-do main container -->
 	<section class="todo-main-container">
+		<div class="progress-box">
+        <h3>In Progress</h3>
+        <ul class="list-group" id="currentList"></ul>
+        </div>
+        <div>
+        </div>
+
+		<div class="progress-box">
+        <h3>Complete</h3>
+        <ul class="list-group" id="archivedList"></ul>
+        </div>
 		<div
 		class="progress-box"
 		id="newList">
@@ -43,7 +63,7 @@
 
 	<!--jQuery-->
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<!--INclude your script file here -->
+	<script src="./app/scripts/scripts.js"></script>
 </main>
 </body>
 </html>
